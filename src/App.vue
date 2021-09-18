@@ -104,61 +104,61 @@ export default {
   },
   data() {
     return {
-      pictures: [
+       pictures: [
         {
           value: 0,
-          src: require("@/assets/ocean.jpg"),
+          src: require("@/assets/picture1.jpg"),
           description: "Ocean view with mountain",
         },
         {
           value: 100,
-          src: require("@/assets/town.jpg"),
-          description: "bridge in old town",
+          src: require("@/assets/picture2.jpg"),
+          description: "Old town",
         },
         {
           value: 200,
-          src: require("@/assets/edinburg.jpg"),
+          src: require("@/assets/picture3.jpg"),
           description: "Edinburg",
         },
         {
           value: 300,
-          src: require("@/assets/sunset.jpg"),
+          src: require("@/assets/picture4.jpg"),
           description: "Sunset on the beach",
         },
         {
           value: 400,
-          src: require("@/assets/sunset2.jpg"),
+          src: require("@/assets/picture5.jpg"),
           description: "Sunset",
         },
         {
           value: 500,
-          src: require("@/assets/sunset3.jpg"),
+          src: require("@/assets/picture6.jpg"),
           description: "Sunset",
         },
         {
           value: 600,
-          src: require("@/assets/cottage-view.jpg"),
+          src: require("@/assets/picture7.jpg"),
           description: "mountain behind cottage",
         },
         {
           value: 700,
-          src: require("@/assets/view.jpg"),
-          description: "City life at night",
+          src: require("@/assets/picture8.jpg"),
+          description: "Old town at night",
         },
         {
           value: 800,
-          src: require("@/assets/water.jpg"),
+          src: require("@/assets/picture9.jpg"),
           description: "Glacier",
         },
         {
           value: 900,
-          src: require("@/assets/forest.jpg"),
+          src: require("@/assets/picture10.jpg"),
           description: "Forest view",
         },
         {
           value: 1000,
-          src: require("@/assets/green.jpg"),
-          description: "Grass",
+          src: require("@/assets/picture11.jpg"),
+          description: "Sunshine on a cliff",
         },
       ],
       data: [],
