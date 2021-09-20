@@ -10,7 +10,12 @@
           class="settings-interval-input"
           @focus="$emit('setPlayingToFalse')"
         />
-        <select v-else class="app-interval-input" v-model="thumbnailSelection">
+        <select
+          v-else
+          class="app-interval-input"
+          v-model="thumbnailSelection"
+          :disabled="showThumbnailSelection"
+        >
           <option :key="option" v-for="option in options">
             {{ option }}
           </option>
@@ -23,7 +28,7 @@
 <script>
 export default {
   name: "Options",
-  props: ["name", "modelValue", "selectElement"],
+  props: ["name", "modelValue", "selectElement", "showThumbnailSelection"],
 
   data: function() {
     return {

@@ -104,7 +104,7 @@ export default {
   },
   data() {
     return {
-       pictures: [
+      pictures: [
         {
           value: 0,
           src: require("@/assets/picture1.jpg"),
@@ -272,20 +272,25 @@ export default {
   },
 
   computed: {
-    leftOrTop() {
+    showTopOrLeft() {
       return (
-        (this.checkboxes.includes("thumbnails") &&
-          this.thumbnailPosition === "Top") ||
-        this.thumbnailPosition === "Left"
+        this.thumbnailPosition === "Top" || this.thumbnailPosition === "Left"
       );
     },
 
-    rightOrBottom() {
+    showBottomOrRight() {
       return (
-        (this.checkboxes.includes("thumbnails") &&
-          this.thumbnailPosition === "Bottom") ||
+        this.thumbnailPosition === "Bottom" ||
         this.thumbnailPosition === "Right"
       );
+    },
+
+    leftOrTop() {
+      return this.checkboxes.includes("thumbnails") && this.showTopOrLeft;
+    },
+
+    rightOrBottom() {
+      return this.checkboxes.includes("thumbnails") && this.showBottomOrRight;
     },
 
     classObject() {

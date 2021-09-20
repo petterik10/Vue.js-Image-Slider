@@ -23,6 +23,7 @@
           v-model="thumbnailPosition"
           :change="$emit('changeThumbnailPosition', thumbnailPosition)"
           :selectElement="true"
+          :showThumbnailSelection="showThumbnailSelection"
         />
       </ul>
       <ul class="settings-checkboxes">
@@ -78,7 +79,11 @@ export default {
       checkedValues: ["bullets", "thumbnails", "index"],
     };
   },
-  methods: {},
+  computed: {
+    showThumbnailSelection() {
+      return !this.checkedValues.includes("thumbnails");
+    },
+  },
   emits: [
     "intervalTime",
     "setPlayingToFalse",
