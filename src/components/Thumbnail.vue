@@ -21,7 +21,11 @@
           v-on:click="$emit('clickedBullet', index)"
         >
           <span class="image-gallery-thumbnail-inner">
-            <img class="image-gallery-thumbnail-image" :src="picture.src" />
+            <img
+              class="image-gallery-thumbnail-image"
+              :src="picture.src"
+              :alt="picture.description"
+            />
           </span>
         </button>
       </div>
